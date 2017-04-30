@@ -1,0 +1,644 @@
+/*
+@font-face { 
+    font-family: 'dinpro'; 
+    src: url('../fonts/YOUR_FONT_NAME.otf');
+} 
+*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+li.itsme{
+				width: 25vw;
+				padding: 2px;
+				text-align: center;
+		}
+#itsyou{
+	width:100%;
+	position: absolute;
+	font-family: Arial;
+}
+#itsyou ul{
+	list-style-type:none;
+}
+#itsyou ul li{
+	display: block inline;
+	color: #fff;
+	background-color:rgba(0,0,0,0.1);
+	border-radius:13%;
+	margin: 4px;
+	text-align: center;
+}
+body {
+	line-height: 1;
+}
+body,html{
+	overflow: hidden;
+	max-width:100%;
+	max-height:100%;  
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+#for_testing {
+    z-index: 1000;
+    color: white;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 6px;
+    display: none;
+}
+#universe{
+	background: #000;
+	position:fixed;
+	left:0px;
+	top:0px;
+	overflow:hidden;
+	background-image:url(../images/background.png);
+	background-position: center center;
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+
+#systems{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.system{
+	position:absolute;
+	left: 0px;
+	top: 0px;
+	border-radius: 50%;
+	background-image:url(../images/sun.svg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat:no-repeat; 
+}
+#systemdes{
+	font-size: .61em;
+	position: absolute;
+	z-index: 120;
+	color: #fff;
+	width: 200px;
+	repeat: no-repeat;
+	outline: #fff;
+	display: inline-block;
+	overflow: hidden;
+    text-align: center;
+    font-family: "Arial", Times, serif;
+}
+#spacecrft{
+    z-index: 125;
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+}
+#systemnamer{
+	font-size: 1.7em;
+	color: #D4D4D4;
+}
+#lockplanet{
+	font-size: 1.4em;
+}
+#systemtarget{
+
+    width: 10vw;
+    z-index: 165;
+    background-image:url(../images/target.png);
+}
+#playing{
+    width: 195px;
+    padding: 3px;
+    font-size: 2em;
+    text-align: center;
+    font-family: "Arial", Times, serif;
+    top: 80vh;
+    border: 2.5px solid #fff;
+    visibility: hidden;
+    border-radius: 12.5%;
+}
+#catspace{
+	margin-top:0;
+	margin-bottom:0;
+	z-index: 1210;
+	position: absolute;
+}
+#aboutus{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	font-family: Arial;
+}
+#robous{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	font-family: Arial;
+}
+#itsyou{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	font-family: Arial;
+}
+#itsyou ul li{
+	border-radius:13%;
+	margin: 4px;
+	text-align: center;
+}
+#disasterhunt{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	font-family: Arial;
+}
+#disasterhunt ul li{
+	border-radius:13%;
+	margin: 4px;
+	text-align: center;
+	width: 25vw;
+	height: 15vh;
+	padding: 2px;
+}
+#startup{
+	position: absolute;
+	width:100vw;
+	z-index:800;
+}
+#startin{
+	position: absolute;
+	width:100vw;
+	height:100vh;
+	z-index:800;
+}
+#backingmain{
+	position: absolute;
+	width: 20vw;
+	font-size: 1.25em;
+	z-index: 800;
+	color: #fff;
+	margin-left: 85vw;
+	margin-top:65vh;
+}
+li.frontmenus{
+	width: 30vw;
+	background-color:  rgba(173,227,57,0.8);
+	padding: 2px;
+	margin: 2px;
+	text-align: Center;
+	border-radius: 12.5%;
+}
+li.frontmenus a{
+	text-decoration:none;
+	color: #fff;
+}
+ul.listus{
+	list-style-type:none;
+}
+ul.listus li{
+	display: block;
+	text-align: center;
+	font-size: 2em;
+}
+ul.listus li.shrtus{
+	font-size: 1em;
+}
+li.backingtomain{
+	width: 30vw;
+	background-color:  rgba(173,227,57,0.8);
+	padding: 2px;
+	margin-left: 35vw;
+	display: block;
+	text-align: center;
+	border-radius: 12.5%;
+}
+			.block{
+				width:20vh;
+				height:20vh;
+				position: absolute;
+			}
+			#gamingmain{
+			    font-family: Arial;
+                font-size: .7em;
+			}
+			#agerr, #scro{
+				font-family: Arial;
+				font-size: .7em;
+				padding-top: 5px;
+			}
+			.container{
+			    width: 47%;
+				margin: 0 auto;
+				padding-left: 5%;
+				float: left;
+				color: #fff;
+
+			}
+			.container1{
+			    width: 47%;
+				margin: 0 auto;
+				margin-top: 3%;
+				float: right;
+				color: #fff;
+			}
+			#logotype {
+				position: relative;
+				width: 100%;
+				font-size: 2em;
+				margin: .5em auto .8em auto;
+				text-align: left;
+			}
+			#logotype1 {
+				position: relative;
+				width: 100%;
+				font-size: 1.5em;
+				margin: 2em auto 0 auto;
+				text-align: center;
+			}
+			h1 {
+				font-size: .7em;
+				line-height: .6em;
+				letter-spacing: .1em;
+				text-transform: uppercase;
+			}
+			.detailer {
+				font-size: .7em;
+				line-height: .6em;
+				letter-spacing: .15em;
+				text-transform: uppercase;
+				text-align: left;
+				-webkit-margin-before: 0.03em;
+				-webkit-margin-after: 0.33em;
+			}
+			.blue {
+				color: #66ccff;
+				font-family: Impact;
+			}
+			.red {
+				color: #ff6680;
+				font-family: Impact;
+			}
+			.scores-container {
+				text-align: left;
+				width: 100%;
+			}
+
+			.restart-button {
+				position: relative;
+				float: left;
+				display: block;
+				z-index: 999;
+				background: rgba(255,255,255,0.3);
+				padding: 15px;
+				font-size: .7em;
+				height: 15vh;
+				line-height: 47px;
+				font-weight: bold;
+				border-radius: 3px;
+				color: white;
+				margin-top: .5vh;
+				text-align: center;
+			}
+			#restart-button {
+            				position: absolute;
+            				float: right;
+            				display: block;
+            				z-index: 999;
+            				height: 15vh;
+            				margin-top: 2vh;
+            			}
+			.score-container{
+				position: relative;
+				display: block;
+				background: #bbada0;
+				width: 14vw;
+				font-size: .7em;
+				padding: 1em;
+				border-radius: 3px;
+				color: white;
+				text-align: center;
+			}
+			.score-container1{
+				position: relative;
+				display: block;
+				background: #bbada0;
+				width: 14vw;
+				font-size: .7em;
+				padding: 1em;
+				border-radius: 3px;
+				color: white;
+				text-align: center;
+			}
+			div{
+				display: block;
+			}
+			.game-container {
+				position: relative;
+				cursor: default;
+				width: 80vh;
+				-webkit-touch-callout: none;
+				-ms-touch-callout: none;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				-ms-touch-action: none;
+				touch-action: none;
+				border-radius: 6px;
+				font-size: .7em;
+				height: inherit;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			.game-intro {
+				float: left;
+				line-height: 82px;
+				margin-bottom: 0;
+			}
+
+			a {
+				color: #fff;
+				font-weight: bold;
+				text-decoration: underline;
+				cursor: pointer;
+			}
+			#topper{
+				width: 100%;
+				position: relative;
+
+			}
+			#topper1{
+            	width: 100%;
+            	position: relative;
+
+            }
+			ul li{
+			display: inline-block;
+			float: center;
+			}
+			ul{
+			list-style-type: none;
+			 -webkit-padding-start: 7px;
+			float: center;
+			}
+			#tagline{
+				font-family: Comic Sans MS;
+			}
+			#tagline1{
+            	font-family: Comic Sans MS;
+            }
+            #tagline2{
+            	font-family: Comic Sans MS;
+            }
+            #tagline3{
+            	font-family: Comic Sans MS;
+            }
+			.secondb{
+				left: 20.5vh;
+			}
+			.thirdb{
+				left: 41vh;
+			}
+			.forthb{
+				left: 61.5vh;
+			}
+			.secondc{
+				top: 20.5vh;
+			}
+			.thirdc{
+				top: 41vh;
+			}
+			.forthc{
+				top: 61.5vh;
+			}
+			#frontalpage {
+                /* The universe takes up all available space */
+                width: 100%;
+                height: 100%;
+            }
+            #orbitcontainerfront{
+            	width: 50vw;
+            	height: 100%;
+            	float: left;
+            	overflow: hidden;
+            }
+            #sunfront {
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                height: 10em;
+                width: 10em;
+                margin-top: -5em;
+                margin-left: -5em;
+                border-radius: 50%;
+            	z-index:99;
+            }
+
+            #earthfront {
+                position: absolute;
+                top: 50% left: 50%;
+                height: 3em;
+                width: 3em;
+                margin-left: 3em;
+                margin-top: 3em;
+            }
+
+            #mercuryfront {
+                position: absolute;
+                top: 50% ;
+            	left: 50%;
+                height: 3em;
+                width: 3em;
+                margin-left: 5em;
+                margin-top: 5em;
+            	z-index:9;
+            }
+            #moonfront {
+                position: relative;
+                top: 50% left: 50%;
+                height: 1.5em;
+                width: 1.5em;
+                margin-left: .3em;
+                margin-top: .3em;
+            }
+            @-webkit-keyframes spin-right {
+              100% {
+                -webkit-transform: rotate(360deg);
+                   -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                     -o-transform: rotate(360deg);
+                        transform: rotate(360deg);
+              }
+            }
+
+            @keyframes spin-right {
+              100% {
+                -webkit-transform: rotate(360deg);
+                   -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                     -o-transform: rotate(360deg);
+                        transform: rotate(360deg);
+              }
+            }
+
+            #moon-orbitfront {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                width: 100px;
+                height: 100px;
+                margin-top: -230px;
+                margin-left: -230px;
+                border-width: 2px;
+                border-style: dotted;
+                border-color: white;
+                border-radius: 50%;
+                -webkit-animation: spin-right 10s linear infinite;
+                -moz-animation: spin-right 10s linear infinite;
+                -ms-animation: spin-right 10s linear infinite;
+                -o-animation: spin-right 10s linear infinite;
+                animation: spin-right 10s linear infinite;
+            }
+
+            #earth-orbitfront {
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                width: 500px;
+                height: 500px;
+                margin-top: -250px;
+                margin-left: -250px;
+                border-width: 2px;
+                border-style: dotted;
+                border-color: white;
+                border-radius: 50%;
+                -webkit-animation: spin-right 20s linear infinite;
+                -moz-animation: spin-right 20s linear infinite;
+                -ms-animation: spin-right 20s linear infinite;
+                -o-animation: spin-right 20s linear infinite;
+                animation: spin-right 20s linear infinite;
+            }
+            #mercury-orbitfront {
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                width: 300px;
+                height: 300px;
+                margin-top: -150px;
+                margin-left: -150px;
+                border-width: 2px;
+                border-style: dotted;
+                border-color: white;
+                border-radius: 50%;
+                -webkit-animation: spin-right 15s linear infinite;
+                -moz-animation: spin-right 15s linear infinite;
+                -ms-animation: spin-right 15s linear infinite;
+                -o-animation: spin-right 15s linear infinite;
+                animation: spin-right 15s linear infinite;
+            }
+            #menufront{
+            	width: 35%;
+            	height: 100%;
+            	left: 55%;
+            	top: 5%;
+            	float: left;
+            	position: absolute;
+            }
+            ul.fronting li{
+            			display: block;
+            			float: center;
+            			font-size: 1.2em;
+            			}
+            ul.fronting{
+            			list-style-type: none;
+            			 -webkit-padding-start: 10px;
+            			float: center;
+            			color: #fff;
+            			font-family: Impact;
+            			font-size: 1.2em;
+            			}
+            #logotype12 {
+            				position: relative;
+            				width: 100%;
+            				margin: 7vh auto 1.5vh auto;
+            				text-align: left;
+            				color: #fff;
+            				font-family: Impact;
+            				font-size: 2.5em;
+            				letter-spacing: .2em;
+            			}
+            #tagline12{
+            				font-family: Comic Sans MS;
+            				margin: 1.5vh auto 1.5vh auto;
+            				color: #fff;
+            			}
+            .blue1 {
+            				color: #66ccff;
+            				font-family: Impact;
+            			}
+            .red1 {
+            				color: #ff6680;
+            				font-family: Impact;
+            			}
+			h1.resultsin{
+				font-size: 2em;
+				text-align: center;
+				top: 12.5vh;
+			}
+			p.scoringbd{
+				text-align: center;
+			}
+			li.itsme{
+				width: 25vw;
+				height: 15vh;
+				padding: 2px;
+			}
+			#resultup{
+				width:100%;
+				height: 100%;
+				position: absolute;
+				font-family: Arial;
+			}
+			#anotherpiece{
+				width: 100vw;
+				height: 50vh;
+			}
+			//aboutus

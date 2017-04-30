@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Website Template</title>
+		<link rel="stylesheet" href="styles/main.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="jquery-1.9.js"></script>
+	</head>
+	<body>
+		
+
+			<!--div id="systemdes">
+				<p id="systemnamer">System: Sun II </p>
+				<p id="plnum">No. of Planet: <b id="numplanet">2</b></p>
+			</div-->
+			<div id="systemdes">
+				<br/>
+				<br/>
+				<p id="systemnamer"></p>
+				<p id="systemnamersci"></p>
+				<p id="systemnamerdist"></p>
+				<p id="numplanet"></p>
+                <p id="fuelneed"></p>
+                <p id="fuelhave"></p>
+				<div id="playing" ontouchstart="maingame();">
+					<p id="lockplanet"></p>
+				</div>
+                <div id="restart-button" ontouchstart="frontalgm();"><img src="back.png" height="110%"/></div>
+			</div>
+            <div id="universe" >
+                <img id="catspace" src="miu1.png" width="30%"/>
+				<li id="backingmain" ontouchstart="frontalgm();"><img src="back.png" width="50px"/></li>
+                <img id="spacecrft" src="spacecraft.png" width="100%" height="100%"/>
+                <div id="systems" id="pageone">
+
+                    <img src="target.png" id="systemtarget"></div>
+                    <div id="planets">
+
+                    </div>
+                </div>
+		    </div>
+			<div id="startup">
+				<img src="pic1.png" id="startin" width="100vw" height="100vh" ontouchstart="promo2();"/>
+			</div>
+			<div id="resultup">
+				<h1 class="resultsin"> YOU WIN!!! </h1> 
+				<p class="scoringbd"> You have collected another piece of your spaceship!!</p>
+				<img id="anotherpiece" width="50vw"/>
+				<ul><li class="backingtomain" ontouchstart="initgame();">Return</li></ul>
+			</div>
+			<div id="itsyou">
+				<ul>
+					<li class="itsme" ontouchstart="app1.sendSms();"><img src="Urgent call 1.png" width="50px" height="auto"/><p>Person</p></li>
+					<li class="itsme" ontouchstart="app1.sendSms();"><img src="Urgent call 2.png" width="50px" height="auto"/><p>Police</p></li>
+					<li class="itsme" ontouchstart="app1.sendSms()"><img src="Urgent call 3.png" width="50px" height="auto"/><p>Fire Brigade</p></li>
+					<li class="itsme" ontouchstart="app1.sendSms();"><img src="Urgent call 4.png" width="50px" height="auto"/><p>Blood</p></li>
+					<li class="itsme" ontouchstart="app1.sendSms();"><img src="Urgent call 5.png" width="50px" height="auto"/><p>Ambulence</p></li>
+					<li class="itsme" ontouchstart="app1.sendSms();"><img src="Urgent call 6.png" width="50px" height="auto"/><p>Alarm</p></li>
+					<li class="itsme" ontouchstart="selfp();"><img src="Urgent call 7.png" width="50px" height="auto"/><p>Self Protection</p></li>
+					<li class="itsme" ontouchstart="robotinging();"><img src="Urgent call 8.png" width="50px" height="auto"/><p>Robofriend</p></li>
+					<li class="itsme" ontouchstart="frontalgm();"><img src="back.png" width="50px" height="auto"/><p>Return</p></li>
+				</ul>
+			</div>
+			<div id="disasterhunt">
+				<ul>
+					<li><a href="http://www.readyforwildfire.org/What-To-Do-If-Trapped/"><img src="diseaster call 1.png" width="50px" height="auto"/><p>Wild Fire</p></a></li>
+					<li><a href="https://www.ses.vic.gov.au/get-ready/quakesafe/what-to-do-in-an-earthquake"><img src="diseaster call 2.png" width="50px" height="auto"/><p>Earthquake</p></a></li>
+					<li><a href="https://www.ses.vic.gov.au/get-ready/stormsafe/what-do-do-in-a-storm"><img src="diseaster call 3.png" width="50px" height="auto"/><p>Thunder Storm</p></a></li>
+					<li><a href="https://www.getprepared.gc.ca/cnt/rsrcs/pblctns/flds-wtd/index-en.aspx"><img src="diseaster call 4.png" width="50px" height="auto"/><p>Flood</p></a></li>
+					<li><a href="http://www.abc.net.au/local/stories/2012/11/15/3633482.htm"><img src="diseaster call 5.png" width="50px" height="auto"/><p>Cyclone</p></a></li>
+					<li><a href="http://www.masternursery.com/what-to-do-during-a-drought/"><img src="diseaster call 6.png" width="50px" height="auto"/><p>Drought</p></a></li>
+					<li><a href="https://www.achievesolutions.net/achievesolutions/en/Content.do?contentId=17630"><img src="diseaster call 7.png" width="50px" height="auto"/><p>Landslide</p></a></li>
+					<li><a href="http://www.bbc.co.uk/schools/gcsebitesize/geography/water_rivers/river_processes_rev1.shtml"><img src="diseaster call 8.png" width="50px" height="auto"/><p>River Erosion</p></a></li>
+					<li ontouchstart="frontalgm();"><img src="back.png" width="50px" height="auto"/><p>Return</p></li>
+				</ul>
+			</div>
+			<div id="aboutus">
+				<ul class="listus">
+					<li class="shrtus"> A short animated game by</li>
+					<li> Asif Imrul </li>
+					<li class="shrtus"> asifimrul1996@gmail.com</li>
+					<li class="shrtus"> fb.com/asif.imrul</li>
+					<li></li>
+					<li class="shrtus">Assistance</li>
+					<li>Maria Rafique</li>
+					<li>Animesh Mitra</li>
+					<li>Diger Md. Cowsick</li>
+					<li>Md. Nazrul Islam</li>
+					<li>Asif Iqbal</li>
+					<li class="backingtomain" ontouchstart="frontalgm();">Return</li>
+				</ul>
+			</div>
+			
+			<!--robotme-->
+			<div id="robous">
+					
+					
+					
+					<div id="colorScreen" onload="app.initialize();">
+						<img src="button top left.png" onclick="app.sendToArduino('F');" ontouchstart="app.sendToArduino('F');" width="50px"/>
+						<img src="button top top.png" onclick="app.sendToArduino('A');" ontouchstart="app.sendToArduino('A');" width="50px"/>
+						<img src="button top right.png" onclick="app.sendToArduino('S');" ontouchstart="app.sendToArduino('S');" width="50px"/><br/>
+						<img src="button left.png" onclick="app.sendToArduino('D');" ontouchstart="app.sendToArduino('D');" width="50px"/>
+						<img src="button mid.png" width="50px"/>
+						<img src="button right.png" onclick="app.sendToArduino('W');" ontouchstart="app.sendToArduino('W');" width="50px"/><br/>
+						<img src="button bottom left.png" onclick="app.sendToArduino('w');" ontouchstart="app.sendToArduino('w');" width="50px"/>
+						<img src="button bottom bottom.png" onclick="app.sendToArduino('h');" ontouchstart="app.sendToArduino('h');" width="50px"/>
+						<img src="button bottom right.png" onclick="app.sendToArduino('i');" ontouchstart="app.sendToArduino('i');" width="50px"/>
+						<div class="app">
+							<div id="ui">
+								<button id="connectButton" onclick="app.connect();" ontouchstart="app.connect();">Connect</button>
+							</div>
+							<div id="message">Hello.</div>
+						</div>
+						<script type="text/javascript" src="cordova.js"></script>
+						<script type="text/javascript" src="js/index.js"></script>
+						<script>
+							
+						</script>
+					</div>
+					<script type="text/javascript">
+						
+					</script>
+
+			</div>
+            <div id="gamingmain">
+                <div class="container">
+                    <div id="topper1">
+
+                        <div class="scores-container">
+                            <ul>
+                                <li><div class="score-container1" id="agerr"> Start!!</div></li>
+                                <li><div class="score-container" id="scro" > Score: 1980</div></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="game-container">
+                        <div id="row1">
+                            <img  id="a11" class="block firstb firstc" onclick="cutter2(11)"/>
+                            <img  id="a12" class="block secondb firstc" onclick="cutter2(12)"/>
+                            <img  id="a13" class="block thirdb firstc" onclick="cutter2(13)"/>
+                            <img  id="a14" class="block forthb firstc" onclick="cutter2(14)"/><br/>
+                        </div>
+                        <div id="row2">
+                            <img  id="a21" class="block firstb secondc" onclick="cutter2(21)"/>
+                            <img  id="a22" class="block secondb secondc" onclick="cutter2(22)"/>
+                            <img  id="a23" class="block thirdb secondc" onclick="cutter2(23)"/>
+                            <img  id="a24" class="block forthb secondc" onclick="cutter2(24)"/><br/>
+                        </div>
+                        <div id="row3">
+                            <img  id="a31" class="block firstb thirdc" onclick="cutter2(31)"/>
+                            <img  id="a32" class="block secondb thirdc" onclick="cutter2(32)"/>
+                            <img  id="a33" class="block thirdb thirdc" onclick="cutter2(33)"/>
+                            <img  id="a34" class="block forthb thirdc" onclick="cutter2(34)"/><br/>
+                        </div>
+                        <div id="row4">
+                            <img  id="a41" class="block firstb forthc" onclick="cutter2(41)"/>
+                            <img  id="a42" class="block secondb forthc" onclick="cutter2(42)"/>
+                            <img  id="a43" class="block thirdb forthc" onclick="cutter2(43)"/>
+                            <img  id="a44" class="block forthb forthc" onclick="cutter2(44)"/><br/>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="container1">
+                    <div id="topper">
+                        <div id="logotype">
+                            <h1><span class="blue">T</span><span class="red">I</span>ME PLUS</h1>
+                        </div>
+                        <div id="tagline2">
+                            <h2>RULES:<br/>Move the tiles and MATCH!!</h2>
+                        </div>
+                        <div id="tagline3">
+
+                            <h2 id="req1"> Required Level: __</h2>
+                        </div>
+                        <div id="logotype1">
+                            <h2 class="detailer"><span class="blue">L</span><span class="red">E</span>VEL:<span id="lvl">1</span></h2>
+                            <h2 class="detailer" id="agerrr">CIVILIZATION</h2>
+                        </div>
+                        <div id="tagline">
+                            <h2 id="tagging">A tiny puzzle that makes you travel into time...</h2>
+                        </div>
+                        <div class="scores-container1">
+                            <ul>
+                                <li ontouchstart="maingame();"><div class="restart-button"><img src="restart.png" height="110%"/></div></li>
+                                <li ontouchstart="initgame();"><div class="restart-button"><img src="back.png" height="110%"/></div></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+			<audio id="successSound" src="/android_asset/www/sound/successSound.mp3" type="audio/mpeg" ></audio>
+            <div id="frontalpage">
+                <div id="menufront">
+                    <div id="logotype12">
+                        <h1><span class="blue1">T</span><span class="red1">I</span>ME PLUS</h1>
+                    </div>
+                    <div id="tagline12">
+                        <h2 id="tagging">A tiny puzzle that makes you travel into time...</h2>
+                    </div>
+                    <ul class="fronting">
+                        <li class="frontmenus" ontouchstart="initgame();">New Game</li>
+                        <li class="frontmenus" ontouchstart="itu();">It's You!!</li>
+                        <li class="frontmenus" ontouchstart="abtus();">About Us!!</li>
+                        <li class="frontmenus"><a href="https://earthdata.nasa.gov/">NASA Earth Data</a></li>
+                        <li class="frontmenus" ontouchstart="abtus();">Sound On</li>
+                    </ul>
+                </div>
+                <div id="orbitcontainerfront">
+                    <img id="sunfront" src="sun.png">
+                    <!-- Image downloaded from http://svs.gsfc.nasa.gov/cgi-bin/details.cgi?aid=10718-->
+                    <div id="mercury-orbitfront">
+                        <img id="mercuryfront" src="earth.png">
+                    </div>
+
+                    <div id="earth-orbitfront">
+                        <img id="earthfront" src="earth.png">
+
+                        <div id="moon-orbitfront">
+                            <img id="moonfront" src="earth.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/jquery-ui.js"></script>
+		<script src="scripts/main.js"></script>
+		<script src="scripts/include.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script>
+		    $(gamingmain).hide();
+		    game.init();
+		    frontalgm();
+		    catmove();
+		</script>
+		<script>
+
+		</script>
+
+	</body>
+</html>
